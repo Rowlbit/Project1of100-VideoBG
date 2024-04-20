@@ -1,0 +1,94 @@
+/* All Selector CSS */ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Section Hero CSS */ 
+.hero { 
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Back-Video CSS */
+ .back-video { 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+ }
+
+
+/* Content CSS */
+.content { 
+    text-align: center;
+}
+
+/* .Content H1 CSS */
+.content h1 { 
+    font-size: 160px;
+    color: white;
+    font-weight: 600;
+    transition: 0.4s;
+} 
+
+/* Content H1 Hover CSS */
+.content h1:hover { 
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+/* .Content A CSS */
+.content a { 
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 14px 50px;
+    margin-top: 20px;
+    transition: 0.4s;
+} 
+
+/* .Content a:hover */
+.content a:hover { 
+    background-color: white;
+    color: black;
+}
+
+/* Media Query CSS */
+@media (min-aspect-ratio: 16/9) { 
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) { 
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* Notes from the things that I learned from doing this project
+
+1. * is the selector for everything in the html document
+2. Padding is used to create space around an element's content, inside of any defined borders.
+3. Margins are used to create space around elements, outside of any defined borders.
+4. The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+5. Border-box tells the browser to account for any border and padding in the values you specify for an element's width and height
+6. Font-Family is used to specify the font of a text
+7. Width
+8. Height
+9. 
+
+*/
